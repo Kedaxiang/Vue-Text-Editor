@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="wrapper">
-      <p class="title">本科人才检测系统</p>
+      <p class="title">Elearing后台管理系统</p>
 
       <div class="contain">
         <div class="box">

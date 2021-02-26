@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api': {
+        target: "www.vtmer2018.top:8066/api",
+        changeOrigin: true,
+        secure: true,
+        pathRewrite: {
+          "^/api": "/"
+        },
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

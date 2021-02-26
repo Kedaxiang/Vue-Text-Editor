@@ -51,6 +51,12 @@
           </div>
         </el-header>
         <el-main>
+          <nav style="margin-bottom: 20px;">
+            <el-breadcrumb separator="/">
+              <el-breadcrumb-item :to="{ path: '/home/home' }">首页</el-breadcrumb-item>
+              <el-breadcrumb-item v-for="(item, index) in this.$route.meta" :key="index">{{item}}</el-breadcrumb-item>
+            </el-breadcrumb>
+          </nav>
           <keep-alive>
             <router-view></router-view>
           </keep-alive>
@@ -75,9 +81,10 @@ export default {
           use: true,
         },
         {
-          pathName: "任务管理",
+          pathName: "课程管理",
           children: [
-            { pathName: "任务管理", path: "/home/task" },
+            { pathName: "课程管理", path: "/home/course" },
+            { pathName: "添加课程", path: "/home/addCourse" },
           ],
           use: true,
         },

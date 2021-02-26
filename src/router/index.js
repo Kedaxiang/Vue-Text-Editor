@@ -23,7 +23,8 @@ const router = new Router({
         {path: '/home/home', component: () => import("../views/home/Home")},
         {path: '/home/user', component: () => import("../views/home/User")},
         
-        {path: '/home/task', component: () => import("../views/task/Task")},
+        {path: '/home/course', component: () => import("../views/course/Task")},
+        {path: '/home/addCourse', component: () => import("../views/course/addCourse")},
         
         {path: '/experts/home', component: () => import("../views/assessmentExperts/Home")},
         {path: '/experts/guide', component: () => import("../views/assessmentExperts/Guide")},
